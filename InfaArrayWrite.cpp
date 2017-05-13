@@ -6,24 +6,29 @@ using namespace std;
 
 namespace arrays 
 {
-	void OutMasDouble(mas_double &mas_double, ofstream &ofst);
-	void OutMasOne(mas_one  &mas_one, ofstream &ofst);
-	
+	void MasDoubleOut(mas_double &mas_double, ofstream &ofst);
+	void MasOneOut(mas_one  &mas_one, ofstream &ofst);
+	int MasOneSum(mas_one &mas_one);
+	int MasDoubleSum(mas_double &mas_double);
+
 	void InfaArrayWrite(array &outarray, ofstream &ofst)
 	{
 		
 		switch (outarray.key) 
 		{
 		case array::key::Mas_one:
-			OutMasOne(outarray.mas_one, ofst);
+			MasOneOut(outarray.mas_one, ofst);
+			ofst << "Сумма элементов = " << MasOneSum(outarray.mas_one) << endl;
 			break;
 		case array::key::Mas_double:
-			OutMasDouble(outarray.mas_double, ofst);
+			MasDoubleOut(outarray.mas_double, ofst);
+			ofst << "Сумма элементов = " << MasDoubleSum(outarray.mas_double) << endl;
 			break;
-
 		default:
 			ofst << "Incorrect array!" << endl;
 		}
+
+		
 
 
 	}
