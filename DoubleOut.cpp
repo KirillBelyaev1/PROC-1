@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "mas_double.h"
 #include <fstream>
+#include "array.h"
 
 using namespace std;
 
@@ -19,5 +20,7 @@ namespace arrays
 			}
 			ofst << endl;
 		}
+		
+		
 	}
 }

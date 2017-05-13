@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include <fstream>
 #include "array.h"
+#include"mas_one.h"
+#include"mas_double.h"
 
 using namespace std;
 
@@ -13,10 +15,12 @@ namespace arrays
 	{
 		array *readarray;
 		int key;
-	
 		ifst >> key;
-
+		int pr;
+		ifst >> pr;
+		
 		readarray = new array;
+		readarray->p = (array::process)pr;
 
 		switch (key) 
 		{
@@ -28,12 +32,13 @@ namespace arrays
 		case 2:
 			readarray->key = array::key::Mas_double;
 			ReadMasDouble(readarray->mas_double, ifst);
-
 			return readarray;
 		default:
 			return NULL;
 		}
 
+
+		return readarray;
 	}
 }
 

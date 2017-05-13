@@ -7,6 +7,7 @@
 #include "mas_one.h"
 #include <fstream>
 
+
 using namespace std;
 
 namespace arrays 
@@ -14,6 +15,8 @@ namespace arrays
 	struct array 
 	{
 		enum key { Mas_double, Mas_one };
+		enum process {ROW,COLUMS,OMAS};
+		process p;
 		key key;
 		int razmer;
 		union 
