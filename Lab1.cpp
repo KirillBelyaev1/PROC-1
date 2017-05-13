@@ -14,13 +14,8 @@ namespace arrays {
 
 using namespace arrays;
 
-int main(int argc, char* argv[]) {
-
-	/*ifstream in;
-	in.open("in.txt");
-
-	ofstream out;
-	out.open("out.txt");*/
+int main(int argc, char* argv[]) 
+{
 	
 	if (argc != 3) {
 		cout << "Incorrect command line! " << "Waited: command in_file out_file" << endl;
@@ -47,8 +42,6 @@ int main(int argc, char* argv[]) {
 	in.close();
 	out.close();
 	
-	getchar();
-	getchar();
 	return 0;
 }
 

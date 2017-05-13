@@ -12,6 +12,7 @@ namespace arrays
 		mas_double.mas2 = new int*[mas_double.razmer];
 		for (int i = 0; i < mas_double.razmer; i++)
 			mas_double.mas2[i] = new int[mas_double.razmer];
+
 		for (int i = 0; i < mas_double.razmer; i++)
 		
 			for (int j = 0; j < mas_double.razmer; j++)
