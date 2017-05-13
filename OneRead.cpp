@@ -6,7 +6,7 @@ using namespace std;
 
 namespace arrays 
 {
-	void ReadMasOne(mas_one &mas_one, ifstream &ifst) 
+	void ReadMas(mas_one &mas_one, ifstream &ifst) 
 	{
 		ifst >> mas_one.razmer;
 

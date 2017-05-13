@@ -2,53 +2,46 @@
 #include <fstream>
 #include <iostream>
 #include "list.h"
+#include <string>
+#include "windows.h"
 
 using namespace std;
 
 namespace arrays {
 	void Init(list &list);
 	void Clear(list &list);
-	void LoadElements(list &list, ifstream &ifst);
-	void PrintElements(list &list, ofstream &ofst);
+	void In(list &list, ifstream &ifst);
+	void Out(list &list, ofstream &ofst);
+	void Out1(list &list, ofstream &ofst);
 }
 
 using namespace arrays;
 
-int main(int argc, char* argv[]) {
-
-	/*ifstream in;
-	in.open("in.txt");
-
-	ofstream out;
-	out.open("out.txt");*/
-	
-	if (argc != 3) {
-		cout << "Incorrect command line! " << "Waited: command in_file out_file" << endl;
-		exit(1);
-	}
+int main(int argc, char* argv[])
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
 	ifstream in(argv[1]);
 	ofstream out(argv[2]);
-
-
-	cout << "Start" << endl;
+	
 
 	list list;
 
+
 	Init(list);
-	LoadElements(list, in);
-	out << "Filled container." << endl;
-	PrintElements(list, out);
+	In(list, in);
+
+
+	Out1(list, out);
 	Clear(list);
 	out << "Empty container. " << endl;
-	PrintElements(list, out);
+
 
 	cout << "Stop" << endl;
 
 	in.close();
 	out.close();
 	
-	getchar();
-	getchar();
 	return 0;
 }
 

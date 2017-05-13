@@ -5,7 +5,7 @@
 using namespace std;
 
 namespace arrays {
-	void OutMasOne(mas_one &mas_one, ofstream &ofst) 
+	void OutMas(mas_one &mas_one, ofstream &ofst) 
 	{
 		ofst << "It is One Matrix: razmernost = " << mas_one.razmer << endl;
 		ofst << "Matrix" << endl;

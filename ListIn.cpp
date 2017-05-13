@@ -7,7 +7,7 @@ using namespace std;
 namespace arrays {
 	array *InfaArrayPrint(ifstream &ifst);
 
-	void LoadElements(list &list, ifstream &ifst) 
+	void In(list &list, ifstream &ifst) 
 	{
 		while (!ifst.eof()) 
 		{

@@ -13,7 +13,7 @@ namespace arrays
 {	
 	struct array 
 	{
-		enum key { Mas_double, Mas_one };
+		enum key { Mas_one, Mas_double};
 		key key;
 		int razmer;
 		union 

@@ -1,21 +1,11 @@
-Filled container.
-List contents 4 elements.
-4: It is Double Matrix: razmernost = 2
-Matrix : 
-10	20	
-30	40	
-3: It is One Matrix: razmernost = 3
+Контейнер содержит 4 элементов
+It is One Matrix: razmernost = 3
 Matrix
 1	0	0	
 0	2	0	
 0	0	3	
 
-2: It is Double Matrix: razmernost = 3
-Matrix : 
-1	2	3	
-4	5	6	
-7	8	9	
-1: It is One Matrix: razmernost = 4
+It is One Matrix: razmernost = 4
 Matrix
 3	0	0	0	
 0	4	0	0	
@@ -23,4 +13,3 @@ Matrix
 0	0	0	6	
 
 Empty container. 
-List contents 0 elements.
