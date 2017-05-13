@@ -16,6 +16,7 @@ namespace arrays
 		enum key { Mas_double, Mas_one };
 		key key;
 		int razmer;
+		int sum=0;
 		union 
 		{
 			mas_double mas_double;

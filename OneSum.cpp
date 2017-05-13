@@ -6,12 +6,12 @@ using namespace std;
 
 namespace arrays 
 {
-	void MasOneRead(mas_one &mas_one, ifstream &ifst) 
+	int CalculationSum(mas_one &mas_one)
 	{
-		ifst >> mas_one.razmer;
-
-		mas_one.mas1 = new int[mas_one.razmer];
+		int sum1 = 0;
 		for (int i = 0; i < mas_one.razmer; i++)
-			ifst >> mas_one.mas1[i];
+			sum1 = sum1 + mas_one.mas1[i];
+		return sum1;
+
 	}
 }

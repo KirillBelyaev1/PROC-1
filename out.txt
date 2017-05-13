@@ -1,26 +1,33 @@
-Filled container.
-List contents 4 elements.
-4: It is Double Matrix: razmernost = 2
-Matrix : 
-10	20	
-30	40	
-3: It is One Matrix: razmernost = 3
-Matrix
-1	0	0	
-0	2	0	
-0	0	3	
+Сортированный контейнер: 
 
-2: It is Double Matrix: razmernost = 3
+List contents 4 elements.
+4: It is One Matrix: razmernost = 4
+Matrix
+1	0	0	0	
+0	2	0	0	
+0	0	3	0	
+0	0	0	4	
+
+Сумма элементов = 10
+3: It is Double Matrix: razmernost = 2
+Matrix : 
+3	4	
+5	6	
+Сумма элементов = 18
+2: It is One Matrix: razmernost = 5
+Matrix
+5	0	0	0	0	
+0	6	0	0	0	
+0	0	7	0	0	
+0	0	0	8	0	
+0	0	0	0	9	
+
+Сумма элементов = 35
+1: It is Double Matrix: razmernost = 3
 Matrix : 
 1	2	3	
 4	5	6	
 7	8	9	
-1: It is One Matrix: razmernost = 4
-Matrix
-3	0	0	0	
-0	4	0	0	
-0	0	5	0	
-0	0	0	6	
-
+Сумма элементов = 45
 Empty container. 
 List contents 0 elements.
