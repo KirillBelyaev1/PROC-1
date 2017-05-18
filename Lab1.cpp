@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include "list.h"
+#include <string>
 #include "windows.h"
 
 using namespace std;
@@ -10,32 +11,35 @@ namespace arrays
 {
 	void Init(list &list);
 	void Clear(list &list);
-	void LoadElements(list &list, ifstream &ifst);
-	void PrintElements(list &list, ofstream &ofst);
 	void SortSum(list &list, bool sort);
+	void In(list &list, ifstream &ifst);
+	void Out(list &list, ofstream &ofst);
+	void Out1(list &list, ofstream &ofst);
 }
 
 using namespace arrays;
 
-int main(int argc, char* argv[]) 
+
+int main(int argc, char* argv[])
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	
+
 	if (argc != 3) {
 		cout << "Incorrect command line! " << "Waited: command in_file out_file" << endl;
 		exit(1);
 	}
+
 	ifstream in(argv[1]);
 	ofstream out(argv[2]);
-
-
-	cout << "Start" << endl;
+	ofstream outtemp("qwer.txt");
+	
 
 	list list;
 
+
 	Init(list);
-	LoadElements(list, in);
+	In(list, in);
 	
 	int enter = 0;
 	do
@@ -58,10 +62,16 @@ int main(int argc, char* argv[])
 		SortSum(list, false);
 	}
 
-	PrintElements(list, out);
+	Out(list, out);
+
+	//In(list, in);
+
+
+	Out1(list, out);
+
 	Clear(list);
 	out << "Empty container. " << endl;
-	PrintElements(list, out);
+
 
 	in.close();
 	out.close();

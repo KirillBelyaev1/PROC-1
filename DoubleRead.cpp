@@ -7,7 +7,7 @@ using namespace std;
 
 namespace arrays 
 {	
-	void MasDoubleRead(mas_double &mas_double, ifstream &ifst) 
+	void ReadMasDouble(mas_double &mas_double, ifstream &ifst) 
 	{
 
 		ifst >> mas_double.razmer;

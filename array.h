@@ -13,7 +13,7 @@ using namespace std;
 
 namespace arrays 
 {	
-	struct array 
+	struct array
 	{
 		enum key { Mas_double, Mas_one, Mas_triangle };
 		enum process {ROW,COLUMS,OMAS};

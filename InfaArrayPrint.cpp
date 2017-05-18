@@ -38,12 +38,9 @@ namespace arrays
 			readarray->key = array::key::Mas_triangle;
 			ReadMasTriangle(readarray->mas_triangle, ifst);
 			return readarray;
-
 		default:
 			return NULL;
 		}
-
-
 		return readarray;
 	}
 }

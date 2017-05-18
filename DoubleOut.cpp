@@ -7,7 +7,7 @@ using namespace std;
 
 namespace arrays
 {
-	void MasDoubleOut(mas_double &mas_double, ofstream &ofst)
+	void OutMasDouble(mas_double &mas_double, ofstream &ofst)
 	{
 
 		ofst << "It is Double Matrix: razmernost = " << mas_double.razmer << endl;

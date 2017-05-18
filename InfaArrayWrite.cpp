@@ -9,6 +9,7 @@ namespace arrays
 	int CalculationSum(array &array);
 	int CalculationSum(mas_one &mas_one);
 	int CalculationSum(mas_double &mas_double);
+	int CalculationSum(mas_triangle &mas_triangle);
 
 	void OutMasDouble(mas_double &mas_double, ofstream &ofst);
 	void OutMasOne(mas_one  &mas_one, ofstream &ofst);
@@ -22,7 +23,6 @@ namespace arrays
 			OutMasOne(outarray.mas_one, ofst);
 			ofst << "Сумма элементов = " << CalculationSum(outarray.mas_one) << endl;
 			break;
-
 		case array::key::Mas_double:
 			OutMasDouble(outarray.mas_double, ofst);
 			ofst << "Сумма элементов = " << CalculationSum(outarray.mas_double) << endl;
