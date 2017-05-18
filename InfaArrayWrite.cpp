@@ -4,7 +4,7 @@
 
 using namespace std;
 
-namespace arrays 
+namespace arrays
 {
 	int CalculationSum(array &array);
 	int CalculationSum(mas_one &mas_one);
@@ -16,13 +16,13 @@ namespace arrays
 	
 	void InfaArrayWrite(array &outarray, ofstream &ofst)
 	{
-		
-		switch (outarray.key) 
+		switch (outarray.key)
 		{
 		case array::key::Mas_one:
 			OutMasOne(outarray.mas_one, ofst);
 			ofst << "Сумма элементов = " << CalculationSum(outarray.mas_one) << endl;
 			break;
+
 		case array::key::Mas_double:
 			OutMasDouble(outarray.mas_double, ofst);
 			ofst << "Сумма элементов = " << CalculationSum(outarray.mas_double) << endl;
@@ -34,11 +34,12 @@ namespace arrays
 		default:
 			ofst << "Incorrect array!" << endl;
 		}
-
-		
-
+		string pro[3] = { "Построчно", "По столбцам", "Одномерный массив" };
+		ofst << pro[outarray.p].c_str()<<"\n";
 
 	}
 }
+
+
 
 
