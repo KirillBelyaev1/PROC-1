@@ -6,8 +6,9 @@ using namespace std;
 
 namespace arrays 
 {
-	void MasDoubleRead(mas_double &mas_double, ifstream &ifst);
-	void MasOneRead(mas_one  &mas_one, ifstream &ifst);
+	void ReadMasDouble(mas_double &mas_double, ifstream &ifst);
+	void ReadMasOne(mas_one  &mas_one, ifstream &ifst);
+	void ReadMasTriangle(mas_triangle &mas_triangle, ifstream &ifst);
 	
 	array* InfaArrayPrint(ifstream &ifst) 
 	{
@@ -22,12 +23,16 @@ namespace arrays
 		{
 		case 1:			
 			readarray->key = array::key::Mas_one;
-			MasOneRead(readarray->mas_one, ifst);
+			ReadMasOne(readarray->mas_one, ifst);
 			return readarray;
 
 		case 2:
 			readarray->key = array::key::Mas_double;
-			MasDoubleRead(readarray->mas_double, ifst);
+			ReadMasDouble(readarray->mas_double, ifst);
+			return readarray;
+		case 3:
+			readarray->key = array::key::Mas_triangle;
+			ReadMasTriangle(readarray->mas_triangle, ifst);
 			return readarray;
 
 		default:

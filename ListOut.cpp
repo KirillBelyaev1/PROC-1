@@ -13,7 +13,8 @@ namespace arrays {
 		listElement *temp = list.listHead;
 		int num = list.listLength;
 
-		while (temp != NULL) {
+		while (temp != NULL) 
+		{
 			
 			ofst << num << ": ";
 			InfaArrayWrite(*(temp->array), ofst);

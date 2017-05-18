@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 Filled container.
+<<<<<<< HEAD
 List contents 2 elements.
 =======
 Сортированный контейнер: 
@@ -36,6 +37,15 @@ Matrix :
 Сумма элементов = 18
 =======
 1: It is Double Matrix: razmernost = 3
+=======
+List contents 3 elements.
+3: It is Triangle Matrix: razmernost = 3
+Matrix : 
+1	
+2	3	
+1	2	3	
+2: It is Double Matrix: razmernost = 3
+>>>>>>> newclass
 Matrix : 
 1	2	3	
 4	5	6	

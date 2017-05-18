@@ -21,6 +21,11 @@ int main(int argc, char* argv[])
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
+	
+	if (argc != 3) {
+		cout << "Incorrect command line! " << "Waited: command in_file out_file" << endl;
+		exit(1);
+	}
 	ifstream in(argv[1]);
 	ofstream out(argv[2]);
 
