@@ -6,7 +6,7 @@ using namespace std;
 
 namespace arrays 
 {
-	int MasOneSum(mas_one &mas_one)
+	int CalculationSum(mas_one &mas_one)
 	{
 		int sum1 = 0;
 		for (int i = 0; i < mas_one.razmer; i++)
