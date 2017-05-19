@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "triangle.h"
 #include <fstream>
+#include "def.h"
 
 using namespace std;
 
@@ -8,13 +9,13 @@ namespace arrays
 {
 	void OutMasTriangle(mas_triangle &mas_triangle, ofstream &ofst)
 	{
-
-		ofst << "It is Triangle Matrix: razmernost = " << mas_triangle.razmer3 << endl;
+		CheckOutputFile(ofst);
+		ofst << "It is Triangle Matrix: razmernost = " << mas_triangle.razmer << endl;
 		ofst << "Matrix : " << endl;
 
-		for (int i = 0; i < mas_triangle.razmer3; i++)
+		for (int i = 0; i < mas_triangle.razmer; i++)
 		{
-			for (int j = 0; j < mas_triangle.razmer3; j++)
+			for (int j = 0; j < mas_triangle.razmer; j++)
 			{
 				if (i >= j)
 					ofst << mas_triangle.mas3[i][j] << "\t";

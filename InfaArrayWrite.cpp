@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include <fstream>
 #include "array.h"
+#include "def.h"
 
 using namespace std;
 
@@ -21,6 +22,7 @@ namespace arrays
 		{
 		case array::key::Mas_one:
 			OutMasOne(outarray.mas_one, ofst);
+			CheckOutputFile(ofst);
 			ofst << "Сумма элементов = " << CalculationSum(outarray.mas_one) << endl;
 			break;
 		case array::key::Mas_double:

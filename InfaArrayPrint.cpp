@@ -3,6 +3,7 @@
 #include "array.h"
 #include"mas_one.h"
 #include"mas_double.h"
+#include "def.h"
 
 using namespace std;
 
@@ -16,9 +17,13 @@ namespace arrays
 	{
 		array *readarray;
 		int key;
+		CheckInputFile(ifst);
 		ifst >> key;
+		CheckWrongInput(ifst);
+		CheckKey(key);
 		int pr;
 		ifst >> pr;
+		CheckWrongInput(ifst);
 		
 		readarray = new array;
 		readarray->p = (array::process)pr;

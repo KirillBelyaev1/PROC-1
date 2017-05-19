@@ -2,6 +2,7 @@
 #include <fstream>
 #include "mas_double.h"
 #include "array.h"
+#include "def.h"
 
 using namespace std;
 
@@ -11,6 +12,9 @@ namespace arrays
 	{
 
 		ifst >> mas_double.razmer;
+		CheckRazmer(mas_double.razmer);
+		CheckWrongInput(ifst);
+		//CheckWrongInput(ifst);
 		mas_double.mas2 = new int*[mas_double.razmer];
 		for (int i = 0; i < mas_double.razmer; i++)
 			mas_double.mas2[i] = new int[mas_double.razmer];
@@ -19,5 +23,6 @@ namespace arrays
 		
 			for (int j = 0; j < mas_double.razmer; j++)
 				ifst >> mas_double.mas2[i][j];
+				CheckWrongInput(ifst);
 	}
 }

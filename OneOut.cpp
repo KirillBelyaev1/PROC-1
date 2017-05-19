@@ -1,12 +1,14 @@
 #include "stdafx.h"
 #include "mas_one.h"
 #include <fstream>
+#include "def.h"
 
 using namespace std;
 
 namespace arrays {
 	void OutMasOne(mas_one &mas_one, ofstream &ofst) 
 	{
+		CheckOutputFile(ofst);
 		ofst << "It is One Matrix: razmernost = " << mas_one.razmer << endl;
 		ofst << "Matrix" << endl;
 		for (int i = 0; i < mas_one.razmer; i++)

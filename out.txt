@@ -1,50 +1,52 @@
 Сортированный контейнер: 
 
-List contents 4 elements.
-4: It is Одномерный массив
-It is One Matrix: razmernost = 3
+Контейнер содержит 4 элементов
+4: It is One Matrix: razmernost = 3
 Matrix
-Сумма элементов = 6
 1	0	0	
 0	2	0	
 0	0	3	
 
-3: It is По столбцам
-It is One Matrix: razmernost = 4
+Сумма элементов = 6
+Одномерный массив
+3: It is One Matrix: razmernost = 4
 Matrix
-Сумма элементов = 18
 3	0	0	0	
 0	4	0	0	
 0	0	5	0	
 0	0	0	6	
 
-2: It is Построчно
-It is Double Matrix: razmernost = 3
+Сумма элементов = 18
+По столбцам
+2: It is Double Matrix: razmernost = 3
 Matrix : 
-Сумма элементов = 45
 1	2	3	
 4	5	6	
 7	8	9	
-1: It is По столбцам
-It is Double Matrix: razmernost = 2
-Matrix : 
-Сумма элементов = 100
-10	20	
-30	40	
-List contents 4 elements.
-It is Построчно
-It is Double Matrix: razmernost = 3
-Matrix : 
 Сумма элементов = 45
-1	2	3	
-4	5	6	
-7	8	9	
-It is По столбцам
-It is Double Matrix: razmernost = 2
+Построчно
+1: It is Double Matrix: razmernost = 2
 Matrix : 
-Сумма элементов = 100
 10	20	
 30	40	
+Сумма элементов = 100
+По столбцам
+Контейнер содержит 4 элементов
+It is One Matrix: razmernost = 3
+Matrix
+1	0	0	
+0	2	0	
+0	0	3	
 
+Сумма элементов = 6
+Одномерный массив
+It is One Matrix: razmernost = 4
+Matrix
+3	0	0	0	
+0	4	0	0	
+0	0	5	0	
+0	0	0	6	
 
-List contents 0 elements.
+Сумма элементов = 18
+По столбцам
+Empty container. 
