@@ -11,8 +11,8 @@ namespace arrays
 	void OutMasDouble(masDouble &masDouble, ofstream &ofst)
 	{
 		CheckOutputFile(ofst);
-		ofst << "It is Double Matrix: razmernost = " << masDouble.razmer << endl;
-		ofst << "Matrix : " << endl;
+		ofst << "Это Двоичная матрица: размерность = " << masDouble.razmer << endl;
+		ofst << "Матрица : " << endl;
 		for (int i = 0; i < masDouble.razmer; i++)
 		{
 			for (int j = 0; j < masDouble.razmer; j++)
@@ -21,7 +21,5 @@ namespace arrays
 			}
 			ofst << endl;
 		}
-		
-		
 	}
 }

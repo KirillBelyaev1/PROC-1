@@ -1,8 +1,6 @@
 #include "stdafx.h"
-
 #ifndef _array
 #define _array
-
 #include "Mas_Double.h"
 #include "Mas_One.h"
 #include"triangle.h"

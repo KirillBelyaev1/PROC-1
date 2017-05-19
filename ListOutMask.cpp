@@ -17,7 +17,7 @@ namespace arrays
 		listElement *temp = list.listHead;
 		int num = list.listLength;
 		int menu;
-		cout << "Вывод:\n1 - Одномерный массив\n2 - Двумерный массив\n";
+		cout << "Вывод:\n1 - Одиночная матрица\n2 - Двумерная матрица\n3 - Треугольная матрица\n4 - Все матрицы\n";
 		cin >> menu;
 		menu--;
 		while (temp != NULL)
@@ -34,13 +34,15 @@ namespace arrays
 					if (temp->array->key == 1)
 						InfaArrayWrite(*(temp->array), ofst);
 					break;
-				case 2:
+				case 3:
+					if (temp->array->key == 2)
+					InfaArrayWrite(*(temp->array), ofst);
+					break;
+				case 4:
 					InfaArrayWrite(*(temp->array), ofst);
 					break;
 				}
 				temp = temp->next;
-
-
 			}
 		}
 	}

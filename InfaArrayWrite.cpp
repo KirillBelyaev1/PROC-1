@@ -15,7 +15,6 @@ namespace arrays
 	void OutMasDouble(masDouble &masDouble, ofstream &ofst);
 	void OutMasOne(masOne  &masOne, ofstream &ofst);
 	void OutMasTriangle(masTriangle &masTriangle, ofstream &ofst);
-	
 	void InfaArrayWrite(array &outarray, ofstream &ofst)
 	{
 		switch (outarray.key)
@@ -40,8 +39,9 @@ namespace arrays
 			break;
 		}
 		default:
-			ofst << "Incorrect array!" << endl;
+			ofst << " Неверный массив!" << endl;
 		}
+		ofst << endl;
 		string pro[3] = { "Построчно", "По столбцам", "Одномерный массив" };
 		ofst << pro[outarray.p].c_str()<<"\n";
 

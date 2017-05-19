@@ -19,21 +19,26 @@ namespace arrays
 
 using namespace arrays;
 
-
 int main(int argc, char* argv[])
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
-	if (argc != 3) 
+	ifstream in;
+	in.open("in.txt");
+
+	ofstream out;
+	out.open("out.txt");
+
+	/*if (argc != 3) 
 	{
-		cout << "Incorrect command line! " << "Waited: command in_file out_file" << endl;
+		cout << "Неверная командная строка! " << "Ожидание: комманды in_file out_file" << endl;
 		exit(1);
 	}
 
 	ifstream in(argv[1]);
 	ofstream out(argv[2]);
-	ofstream outtemp("qwer.txt");
+	ofstream outtemp("qwer.txt");*/
 	
 
 	list list;
@@ -67,13 +72,10 @@ int main(int argc, char* argv[])
 
 	Out(list, out);
 
-	//In(list, in);
-
-
 	Out1(list, out);
 
 	Clear(list);
-	out << "Empty container. " << endl;
+	out << "Контейнер пуст. " << endl;
 
 
 	in.close();

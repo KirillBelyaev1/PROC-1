@@ -10,8 +10,8 @@ namespace arrays
 	void OutMasTriangle(masTriangle &masTriangle, ofstream &ofst)
 	{
 		CheckOutputFile(ofst);
-		ofst << "It is Triangle Matrix: razmernost = " << masTriangle.razmer << endl;
-		ofst << "Matrix : " << endl;
+		ofst << "Это Треугольная матрица: размерность = " << masTriangle.razmer << endl;
+		ofst << "Матрица : " << endl;
 
 		for (int i = 0; i < masTriangle.razmer; i++)
 		{

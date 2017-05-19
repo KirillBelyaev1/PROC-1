@@ -10,7 +10,6 @@ namespace arrays
 {	
 	void ReadMasDouble(masDouble &masDouble, ifstream &ifst)
 	{
-
 		ifst >> masDouble.razmer;
 		CheckRazmer(masDouble.razmer);
 		CheckWrongInput(ifst);

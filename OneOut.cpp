@@ -9,8 +9,8 @@ namespace arrays {
 	void OutMasOne(masOne &masOne, ofstream &ofst)
 	{
 		CheckOutputFile(ofst);
-		ofst << "It is One Matrix: razmernost = " << masOne.razmer << endl;
-		ofst << "Matrix" << endl;
+		ofst << "Ёто единична€ матрица: размерность = " << masOne.razmer << endl;
+		ofst << "ћатрица" << endl;
 		for (int i = 0; i < masOne.razmer; i++)
 		{
 			for (int j = 0; j < masOne.razmer; j++)
@@ -22,6 +22,5 @@ namespace arrays {
 			}
 			ofst << "\n";
 		}
-		ofst << endl;
 	}
 }

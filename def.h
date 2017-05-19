@@ -9,7 +9,6 @@ using namespace std;
 void CheckInputFile(ifstream &ifst);
 void CheckWrongInput(ifstream &ifst);
 void CheckOutputFile(ostream &ofst);
-//void CheckField(int p);
 void CheckKey(int key);
 void CheckRazmer(int razmer);
 

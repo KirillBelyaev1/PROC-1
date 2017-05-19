@@ -17,6 +17,5 @@ namespace arrays {
 			list.listHead = temp;
 			list.listLength++;
 		}
-
 	}
 } 
