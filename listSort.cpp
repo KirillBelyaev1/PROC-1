@@ -13,12 +13,16 @@ namespace arrays {
 		listElement *current = list.listHead, *temp = NULL, *previous = NULL;
 		bool flag = false;
 
-		do {
+		do 
+		{
 			flag = false;
 			current = list.listHead;
-			while (current->next) {
-				if (sort == true) {
-					if (CalculationSum(*(current->array)) > CalculationSum(*(current->next->array))) {
+			while (current->next) 
+			{
+				if (sort == true) 
+				{
+					if (CalculationSum(*(current->array)) > CalculationSum(*(current->next->array))) 
+					{
 						if (current == list.listHead)
 						{
 							temp = current;
@@ -39,9 +43,12 @@ namespace arrays {
 						}
 					}
 				}
-				else {
-					if (CalculationSum(*(current->array)) < CalculationSum(*(current->next->array))) {
-						if (current == list.listHead) {
+				else 
+				{
+					if (CalculationSum(*(current->array)) < CalculationSum(*(current->next->array))) 
+					{
+						if (current == list.listHead) 
+						{
 							temp = current;
 							current = temp->next;
 							temp->next = current->next;
@@ -49,7 +56,8 @@ namespace arrays {
 							list.listHead = current;
 							flag = true;
 						}
-						else {
+						else 
+						{
 							temp = current;
 							current = temp->next;
 							temp->next = current->next;

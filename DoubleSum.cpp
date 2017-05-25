@@ -11,9 +11,12 @@ namespace arrays
 		int sum2 = 0;
 
 		for (int i = 0; i < mas_double.razmer; i++)
-		for (int j = 0; j < mas_double.razmer; j++)
-			sum2 = sum2 + mas_double.mas2[i][j];
-		return sum2;
-
+		{
+			for (int j = 0; j < mas_double.razmer; j++)
+			{
+				sum2 = sum2 + mas_double.mas2[i][j];
+				return sum2;
+			}
+		}
 	}
 }

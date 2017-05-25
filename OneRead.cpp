@@ -14,6 +14,8 @@ namespace arrays
 
 		mas_one.mas1 = new int[mas_one.razmer];
 		for (int i = 0; i < mas_one.razmer; i++)
+		{
 			ifst >> mas_one.mas1[i];
+		}
 	}
 }

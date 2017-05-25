@@ -25,7 +25,8 @@ int main(int argc, char* argv[])
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
-	if (argc != 3) {
+	if (argc != 3) 
+	{
 		cout << "Incorrect command line! " << "Waited: command in_file out_file" << endl;
 		exit(1);
 	}
@@ -47,7 +48,9 @@ int main(int argc, char* argv[])
 		cout << "Сортировка:\n1 - по возрастанию\n2 - по убыванию\n" << endl;
 		cin >> enter;
 		if (enter != 1 && enter != 2)
+		{
 			cout << "Ошибка! Повторите ввод!" << endl;
+		}
 
 	} while (enter != 1 && enter != 2);
 

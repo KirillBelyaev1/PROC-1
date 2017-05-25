@@ -16,7 +16,6 @@ namespace arrays {
 
 		while (temp != NULL) 
 		{
-			
 			ofst << num << ": ";
 			InfaArrayWrite(*(temp->array), ofst);
 			temp = temp->next;
