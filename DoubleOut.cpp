@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "mas_double.h"
+#include "Mas_Double.h"
 #include <fstream>
 #include "array.h"
 #include "def.h"
@@ -8,16 +8,16 @@ using namespace std;
 
 namespace arrays
 {
-	void OutMasDouble(mas_double &mas_double, ofstream &ofst)
+	void OutMasDouble(Mas_Double &Mas_Double, ofstream &ofst)
 	{
 		CheckOutputFile(ofst);
-		ofst << "It is Double Matrix: razmernost = " << mas_double.razmer << endl;
+		ofst << "It is Double Matrix: razmernost = " << Mas_Double.razmer << endl;
 		ofst << "Matrix : " << endl;
-		for (int i = 0; i < mas_double.razmer; i++)
+		for (int i = 0; i < Mas_Double.razmer; i++)
 		{
-			for (int j = 0; j < mas_double.razmer; j++)
+			for (int j = 0; j < Mas_Double.razmer; j++)
 			{
-				ofst << mas_double.mas2[i][j] << "\t";
+				ofst << Mas_Double.mas2[i][j] << "\t";
 			}
 			ofst << endl;
 		}

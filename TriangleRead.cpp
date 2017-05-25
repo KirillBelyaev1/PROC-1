@@ -7,24 +7,24 @@ using namespace std;
 
 namespace arrays
 {
-	void ReadMasTriangle(mas_triangle &mas_triangle, ifstream &ifst)
+	void ReadMasTriangle(Mas_Triangle &Mas_Triangle, ifstream &ifst)
 	{
-		ifst >> mas_triangle.razmer;
-		CheckRazmer(mas_triangle.razmer);
+		ifst >> Mas_Triangle.razmer;
+		CheckRazmer(Mas_Triangle.razmer);
 		CheckWrongInput(ifst);
-		mas_triangle.mas3 = new int*[mas_triangle.razmer];
+		Mas_Triangle.mas3 = new int*[Mas_Triangle.razmer];
 
-		for (int i = 0; i < mas_triangle.razmer; i++)
+		for (int i = 0; i < Mas_Triangle.razmer; i++)
 		{
-			mas_triangle.mas3[i] = new int[mas_triangle.razmer];
+			Mas_Triangle.mas3[i] = new int[Mas_Triangle.razmer];
 		}
-		for (int i = 0; i < mas_triangle.razmer; i++)
+		for (int i = 0; i < Mas_Triangle.razmer; i++)
 		{
-			for (int j = 0; j < mas_triangle.razmer; j++)
+			for (int j = 0; j < Mas_Triangle.razmer; j++)
 			{
 				if (i >= j)
 				{
-					ifst >> mas_triangle.mas3[i][j];
+					ifst >> Mas_Triangle.mas3[i][j];
 					CheckWrongInput(ifst);
 				}
 			}

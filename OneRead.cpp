@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "mas_one.h"
+#include "Mas_One.h"
 #include <fstream>
 #include "def.h"
 
@@ -7,15 +7,15 @@ using namespace std;
 
 namespace arrays 
 {
-	void ReadMasOne(mas_one &mas_one, ifstream &ifst) 
+	void ReadMasOne(Mas_One &Mas_One, ifstream &ifst)
 	{
-		ifst >> mas_one.razmer;
-		CheckRazmer(mas_one.razmer);
+		ifst >> Mas_One.razmer;
+		CheckRazmer(Mas_One.razmer);
 
-		mas_one.mas1 = new int[mas_one.razmer];
-		for (int i = 0; i < mas_one.razmer; i++)
+		Mas_One.mas1 = new int[Mas_One.razmer];
+		for (int i = 0; i < Mas_One.razmer; i++)
 		{
-			ifst >> mas_one.mas1[i];
+			ifst >> Mas_One.mas1[i];
 		}
 	}
 }

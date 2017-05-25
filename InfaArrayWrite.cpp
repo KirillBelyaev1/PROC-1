@@ -8,13 +8,13 @@ using namespace std;
 namespace arrays
 {
 	int CalculationSum(array &array);
-	int CalculationSum(mas_one &mas_one);
-	int CalculationSum(mas_double &mas_double);
-	int CalculationSum(mas_triangle &mas_triangle);
+	int CalculationSum(Mas_One &Mas_One);
+	int CalculationSum(Mas_Double &Mas_Double);
+	int CalculationSum(Mas_Triangle &Mas_Triangle);
 
-	void OutMasDouble(mas_double &mas_double, ofstream &ofst);
-	void OutMasOne(mas_one  &mas_one, ofstream &ofst);
-	void OutMasTriangle(mas_triangle &mas_triangle, ofstream &ofst);
+	void OutMasDouble(Mas_Double &Mas_Double, ofstream &ofst);
+	void OutMasOne(Mas_One  &Mas_One, ofstream &ofst);
+	void OutMasTriangle(Mas_Triangle &Mas_Triangle, ofstream &ofst);
 	
 	void InfaArrayWrite(array &outarray, ofstream &ofst)
 	{
@@ -22,21 +22,21 @@ namespace arrays
 		{
 		case array::key::Mas_one:
 		{
-			OutMasOne(outarray.mas_one, ofst);
+			OutMasOne(outarray.Mas_One, ofst);
 			CheckOutputFile(ofst);
-			ofst << "Сумма элементов = " << CalculationSum(outarray.mas_one) << endl;
+			ofst << "Сумма элементов = " << CalculationSum(outarray.Mas_One) << endl;
 			break;
 		}
 		case array::key::Mas_double:
 		{
-			OutMasDouble(outarray.mas_double, ofst);
-			ofst << "Сумма элементов = " << CalculationSum(outarray.mas_double) << endl;
+			OutMasDouble(outarray.Mas_Double, ofst);
+			ofst << "Сумма элементов = " << CalculationSum(outarray.Mas_Double) << endl;
 			break;
 		}
 		case array::key::Mas_triangle:
 		{
-			OutMasTriangle(outarray.mas_triangle, ofst);
-			ofst << "Сумма элементов = " << CalculationSum(outarray.mas_triangle) << endl;
+			OutMasTriangle(outarray.Mas_Triangle, ofst);
+			ofst << "Сумма элементов = " << CalculationSum(outarray.Mas_Triangle) << endl;
 			break;
 		}
 		default:

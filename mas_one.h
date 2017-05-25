@@ -1,10 +1,10 @@
 #include "stdafx.h"
-#ifndef _mas_one
-#define _mas_one
+#ifndef _Mas_One
+#define _Mas_One
 
 namespace arrays 
 {
-	struct mas_one 
+	struct Mas_One
 	{
 		int razmer;
 		int* mas1;

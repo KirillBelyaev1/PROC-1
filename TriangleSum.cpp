@@ -6,15 +6,15 @@ using namespace std;
 
 namespace arrays
 {
-	int CalculationSum(mas_triangle &mas_triangle)
+	int CalculationSum(Mas_Triangle &Mas_Triangle)
 	{
 		int sum3 = 0;
 
-		for (int i = 0; i < mas_triangle.razmer; i++)
+		for (int i = 0; i < Mas_Triangle.razmer; i++)
 		{
-			for (int j = 0; j < mas_triangle.razmer; j++)
+			for (int j = 0; j < Mas_Triangle.razmer; j++)
 			{
-				sum3 = sum3 + mas_triangle.mas3[i][j];
+				sum3 = sum3 + Mas_Triangle.mas3[i][j];
 			}
 				return sum3;
 		}

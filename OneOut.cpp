@@ -1,22 +1,22 @@
 #include "stdafx.h"
-#include "mas_one.h"
+#include "Mas_One.h"
 #include <fstream>
 #include "def.h"
 
 using namespace std;
 
 namespace arrays {
-	void OutMasOne(mas_one &mas_one, ofstream &ofst) 
+	void OutMasOne(Mas_One &Mas_One, ofstream &ofst)
 	{
 		CheckOutputFile(ofst);
-		ofst << "It is One Matrix: razmernost = " << mas_one.razmer << endl;
+		ofst << "It is One Matrix: razmernost = " << Mas_One.razmer << endl;
 		ofst << "Matrix" << endl;
-		for (int i = 0; i < mas_one.razmer; i++)
+		for (int i = 0; i < Mas_One.razmer; i++)
 		{
-			for (int j = 0; j < mas_one.razmer; j++)
+			for (int j = 0; j < Mas_One.razmer; j++)
 			{
 				if (i == j)
-					ofst << mas_one.mas1[i] << "\t";
+					ofst << Mas_One.mas1[i] << "\t";
 				else
 					ofst << "0\t";
 			}

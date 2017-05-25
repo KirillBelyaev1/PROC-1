@@ -3,8 +3,8 @@
 #ifndef _array
 #define _array
 
-#include "mas_double.h"
-#include "mas_one.h"
+#include "Mas_Double.h"
+#include "Mas_One.h"
 #include"triangle.h"
 #include <fstream>
 
@@ -23,9 +23,9 @@ namespace arrays
 		int sum=0;
 		union 
 		{
-			mas_double mas_double;
-			mas_one mas_one;
-			mas_triangle mas_triangle;
+			Mas_Double Mas_Double;
+			Mas_One Mas_One;
+			Mas_Triangle Mas_Triangle;
 		};
 	};
 }
