@@ -7,15 +7,15 @@ using namespace std;
 
 namespace arrays 
 {
-	void ReadMasOne(Mas_One &Mas_One, ifstream &ifst)
+	void ReadMasOne(masOne &masOne, ifstream &ifst)
 	{
-		ifst >> Mas_One.razmer;
-		CheckRazmer(Mas_One.razmer);
+		ifst >> masOne.razmer;
+		CheckRazmer(masOne.razmer);
 
-		Mas_One.mas1 = new int[Mas_One.razmer];
-		for (int i = 0; i < Mas_One.razmer; i++)
+		masOne.mas1 = new int[masOne.razmer];
+		for (int i = 0; i < masOne.razmer; i++)
 		{
-			ifst >> Mas_One.mas1[i];
+			ifst >> masOne.mas1[i];
 		}
 	}
 }

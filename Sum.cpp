@@ -8,21 +8,21 @@ using namespace std;
 
 namespace arrays
 {
-	int CalculationSum(Mas_One &Mas_One);
-	int CalculationSum(Mas_Double &Mas_Double);
-	int CalculationSum(Mas_Triangle &Mas_Triangle);
+	int CalculationSum(masOne &masOne);
+	int CalculationSum(masDouble &masDouble);
+	int CalculationSum(masTriangle &masTriangle);
 	int CalculationSum(array &array)
 	{
 		switch (array.key)
 		{
 		case array::key::Mas_one:
-			return CalculationSum(array.Mas_One);
+			return CalculationSum(array.masOne);
 			break;
 		case array::key::Mas_double:
-			return CalculationSum(array.Mas_Double);
+			return CalculationSum(array.masDouble);
 			break;
 		case array::key::Mas_triangle:
-			return CalculationSum(array.Mas_Triangle);
+			return CalculationSum(array.masTriangle);
 			break;
 		default:
 			return 0;

@@ -10,9 +10,9 @@ using namespace std;
 
 namespace arrays 
 {
-	void ReadMasDouble(Mas_Double &Mas_Double, ifstream &ifst);
-	void ReadMasOne(Mas_One  &Mas_One, ifstream &ifst);
-	void ReadMasTriangle(Mas_Triangle &Mas_Triangle, ifstream &ifst);
+	void ReadMasDouble(masDouble &masDouble, ifstream &ifst);
+	void ReadMasOne(masOne  &masOne, ifstream &ifst);
+	void ReadMasTriangle(masTriangle &masTriangle, ifstream &ifst);
 	
 	array* InfaArrayPrint(ifstream &ifst) 
 	{
@@ -34,19 +34,19 @@ namespace arrays
 		case 1:		
 		{
 			readarray->key = array::key::Mas_one;
-			ReadMasOne(readarray->Mas_One, ifst);
+			ReadMasOne(readarray->masOne, ifst);
 			return readarray;
 		}
 		case 2:
 		{
 			readarray->key = array::key::Mas_double;
-			ReadMasDouble(readarray->Mas_Double, ifst);
+			ReadMasDouble(readarray->masDouble, ifst);
 			return readarray;
 		}
 		case 3:
 		{
 			readarray->key = array::key::Mas_triangle;
-			ReadMasTriangle(readarray->Mas_Triangle, ifst);
+			ReadMasTriangle(readarray->masTriangle, ifst);
 			return readarray;
 		}
 		default:

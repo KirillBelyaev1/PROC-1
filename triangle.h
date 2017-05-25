@@ -4,7 +4,7 @@
 
 namespace arrays
 {
-	struct Mas_Triangle
+	struct masTriangle
 	{
 		int razmer;
 		int** mas3;

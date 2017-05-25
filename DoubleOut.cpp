@@ -8,16 +8,16 @@ using namespace std;
 
 namespace arrays
 {
-	void OutMasDouble(Mas_Double &Mas_Double, ofstream &ofst)
+	void OutMasDouble(masDouble &masDouble, ofstream &ofst)
 	{
 		CheckOutputFile(ofst);
-		ofst << "It is Double Matrix: razmernost = " << Mas_Double.razmer << endl;
+		ofst << "It is Double Matrix: razmernost = " << masDouble.razmer << endl;
 		ofst << "Matrix : " << endl;
-		for (int i = 0; i < Mas_Double.razmer; i++)
+		for (int i = 0; i < masDouble.razmer; i++)
 		{
-			for (int j = 0; j < Mas_Double.razmer; j++)
+			for (int j = 0; j < masDouble.razmer; j++)
 			{
-				ofst << Mas_Double.mas2[i][j] << "\t";
+				ofst << masDouble.mas2[i][j] << "\t";
 			}
 			ofst << endl;
 		}

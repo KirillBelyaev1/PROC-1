@@ -7,18 +7,18 @@ using namespace std;
 
 namespace arrays
 {
-	void OutMasTriangle(Mas_Triangle &Mas_Triangle, ofstream &ofst)
+	void OutMasTriangle(masTriangle &masTriangle, ofstream &ofst)
 	{
 		CheckOutputFile(ofst);
-		ofst << "It is Triangle Matrix: razmernost = " << Mas_Triangle.razmer << endl;
+		ofst << "It is Triangle Matrix: razmernost = " << masTriangle.razmer << endl;
 		ofst << "Matrix : " << endl;
 
-		for (int i = 0; i < Mas_Triangle.razmer; i++)
+		for (int i = 0; i < masTriangle.razmer; i++)
 		{
-			for (int j = 0; j < Mas_Triangle.razmer; j++)
+			for (int j = 0; j < masTriangle.razmer; j++)
 			{
 				if (i >= j)
-					ofst << Mas_Triangle.mas3[i][j] << "\t";
+					ofst << masTriangle.mas3[i][j] << "\t";
 			}
 			ofst << endl;
 		}

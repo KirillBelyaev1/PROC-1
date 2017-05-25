@@ -6,12 +6,12 @@ using namespace std;
 
 namespace arrays 
 {
-	int CalculationSum(Mas_One &Mas_One)
+	int CalculationSum(masOne &masOne)
 	{
 		int sum1 = 0;
-		for (int i = 0; i < Mas_One.razmer; i++)
+		for (int i = 0; i < masOne.razmer; i++)
 		{
-			sum1 = sum1 + Mas_One.mas1[i];
+			sum1 = sum1 + masOne.mas1[i];
 		}
 			return sum1;
 	}

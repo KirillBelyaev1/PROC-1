@@ -23,9 +23,9 @@ namespace arrays
 		int sum=0;
 		union 
 		{
-			Mas_Double Mas_Double;
-			Mas_One Mas_One;
-			Mas_Triangle Mas_Triangle;
+			masDouble masDouble;
+			masOne masOne;
+			masTriangle masTriangle;
 		};
 	};
 }

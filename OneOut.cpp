@@ -6,17 +6,17 @@
 using namespace std;
 
 namespace arrays {
-	void OutMasOne(Mas_One &Mas_One, ofstream &ofst)
+	void OutMasOne(masOne &masOne, ofstream &ofst)
 	{
 		CheckOutputFile(ofst);
-		ofst << "It is One Matrix: razmernost = " << Mas_One.razmer << endl;
+		ofst << "It is One Matrix: razmernost = " << masOne.razmer << endl;
 		ofst << "Matrix" << endl;
-		for (int i = 0; i < Mas_One.razmer; i++)
+		for (int i = 0; i < masOne.razmer; i++)
 		{
-			for (int j = 0; j < Mas_One.razmer; j++)
+			for (int j = 0; j < masOne.razmer; j++)
 			{
 				if (i == j)
-					ofst << Mas_One.mas1[i] << "\t";
+					ofst << masOne.mas1[i] << "\t";
 				else
 					ofst << "0\t";
 			}

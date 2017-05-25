@@ -8,23 +8,23 @@ using namespace std;
 
 namespace arrays 
 {	
-	void ReadMasDouble(Mas_Double &Mas_Double, ifstream &ifst)
+	void ReadMasDouble(masDouble &masDouble, ifstream &ifst)
 	{
 
-		ifst >> Mas_Double.razmer;
-		CheckRazmer(Mas_Double.razmer);
+		ifst >> masDouble.razmer;
+		CheckRazmer(masDouble.razmer);
 		CheckWrongInput(ifst);
-		Mas_Double.mas2 = new int*[Mas_Double.razmer];
-		for (int i = 0; i < Mas_Double.razmer; i++)
+		masDouble.mas2 = new int*[masDouble.razmer];
+		for (int i = 0; i < masDouble.razmer; i++)
 		{
-			Mas_Double.mas2[i] = new int[Mas_Double.razmer];
+			masDouble.mas2[i] = new int[masDouble.razmer];
 		}
 
-		for (int i = 0; i < Mas_Double.razmer; i++)
+		for (int i = 0; i < masDouble.razmer; i++)
 		{
-			for (int j = 0; j < Mas_Double.razmer; j++)
+			for (int j = 0; j < masDouble.razmer; j++)
 			{
-				ifst >> Mas_Double.mas2[i][j];
+				ifst >> masDouble.mas2[i][j];
 				CheckWrongInput(ifst);
 			}
 		}
