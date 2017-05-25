@@ -9,38 +9,14 @@ Matrix
 
 Сумма элементов = 6
 Одномерный массив
-3: It is One Matrix: razmernost = 4
-Matrix
-3	0	0	0	
-0	4	0	0	
-0	0	5	0	
-0	0	0	6	
-
-Сумма элементов = 18
-По столбцам
-2: It is Double Matrix: razmernost = 3
+3: It is Double Matrix: razmernost = 3
 Matrix : 
 1	2	3	
 4	5	6	
 7	8	9	
-Сумма элементов = 45
-Построчно
-1: It is Double Matrix: razmernost = 2
-Matrix : 
-10	20	
-30	40	
-Сумма элементов = 100
-По столбцам
-Контейнер содержит 4 элементов
-It is One Matrix: razmernost = 3
-Matrix
-1	0	0	
-0	2	0	
-0	0	3	
-
 Сумма элементов = 6
-Одномерный массив
-It is One Matrix: razmernost = 4
+Построчно
+2: It is One Matrix: razmernost = 4
 Matrix
 3	0	0	0	
 0	4	0	0	
@@ -48,5 +24,25 @@ Matrix
 0	0	0	6	
 
 Сумма элементов = 18
+По столбцам
+1: It is Double Matrix: razmernost = 2
+Matrix : 
+10	20	
+30	40	
+Сумма элементов = 30
+По столбцам
+Контейнер содержит 4 элементов
+It is Double Matrix: razmernost = 3
+Matrix : 
+1	2	3	
+4	5	6	
+7	8	9	
+Сумма элементов = 6
+Построчно
+It is Double Matrix: razmernost = 2
+Matrix : 
+10	20	
+30	40	
+Сумма элементов = 30
 По столбцам
 Empty container. 

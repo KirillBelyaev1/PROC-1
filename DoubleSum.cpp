@@ -15,8 +15,8 @@ namespace arrays
 			for (int j = 0; j < mas_double.razmer; j++)
 			{
 				sum2 = sum2 + mas_double.mas2[i][j];
-				return sum2;
 			}
+				return sum2;
 		}
 	}
 }
